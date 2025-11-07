@@ -1,25 +1,14 @@
 // Home screen
-import { StyleSheet, Text, View } from 'react-native';
+import { Text, View } from 'react-native';
+import styles from './styles';
 
 export default function Index() {
   return (
     <View style={styles.container}>
-      <Text style={styles.text}>I just typed words. Michelle is awesome.
+      <Text style={styles.text}> Hello,
       </Text>
+      <Text style={styles.text}> Welcome back! </Text>
+      <Text style={styles.text}> Email/Username </Text>
     </View>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: '#ffffff',
-  },
-  text: {
-    fontSize: 24,
-    fontWeight: 'bold',
-    color: '#007AFF',
-  },
-});
